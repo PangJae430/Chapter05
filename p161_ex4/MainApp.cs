@@ -10,24 +10,27 @@ namespace p161_ex4
             string input = Console.ReadLine();
             int number = Convert.ToInt32(input);
 
+            string value = "0";
+
             switch(number)
             {
                 case 3: case 4: case 5:
-                    Console.WriteLine($"입력하신 {number}월은 봄 입니다.");
+                    value = "봄";
                     break;
                 case 6: case 7: case 8:
-                    Console.WriteLine($"입력하신 {number}월은 여름 입니다.");
+                    value = "여름";
                     break;
                 case 9: case 10: case 11:
-                    Console.WriteLine($"입력하신 {number}월은 가을 입니다.");
+                    value = "가을";
                     break;
                 case 12: case 2: case 1:
-                    Console.WriteLine($"입력하신 {number}월은 겨울 입니다.");
+                    value = "겨울";
                     break;
                 default:
                     Console.WriteLine($"입력하신 {number}월은 존재하시 않습니다.다시 입력하여 주십시오.");
                     return;
             }
+            Console.WriteLine($"입력하신 {number}월은 {value} 입니다.");
         }
     }
 }
