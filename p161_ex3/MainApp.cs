@@ -22,7 +22,7 @@ namespace p161_ex3
                     Console.WriteLine($"{number}월은 28일까지 있습니다.");
                     break;
                 default:
-                    Console.WriteLine($"{number}월은 존재하지 않습니다.1-12의 숫자를 입력하세요.");
+                    Console.WriteLine("정상적인 입력값이 아닙니다. 확인 후 다시 실행해 주세요.");
                     return;
             }
             
